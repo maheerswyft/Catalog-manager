@@ -15,6 +15,7 @@ const useStyles = makeStyles({
     borderRadius: "4px",
     alignItems: "center",
     justifyContent: "center",
+    paddingBottom: '40px'
   },
   title_text: {
     fontFamily: "Poppins",
@@ -39,7 +40,7 @@ const useStyles = makeStyles({
 
     color: "#FFFFFF",
     paddingTop: "10px",
-    paddingBottom: "20px",
+    paddingBottom: "20px"
   },
   cancel_button: {},
 });

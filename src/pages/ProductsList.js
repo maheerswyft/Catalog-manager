@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@mui/styles";
 import SearchBar from "../components/SearchBar";
 import Dropdowns from "../components/Dropdowns";
-import TableContainer from '../components/TableContainer'
+import TableContainer from "../components/TableContainer";
 
 const useStyles = makeStyles({
   clear_all_text: {
@@ -14,10 +14,10 @@ const useStyles = makeStyles({
 
     color: "#000000",
     textAlign: "right",
-    textDecorationLine: 'underline',
+    textDecorationLine: "underline",
     paddingRight: "50px",
-    paddingTop: '10px',
-    paddingBottom:'50px'
+    paddingTop: "10px",
+    paddingBottom: "50px",
   },
 });
 
@@ -25,10 +25,18 @@ const ProductsList = () => {
   const classes = useStyles();
   return (
     <div style={{ background: "white" }}>
-      <SearchBar title="search..." width="50%"/>
+      <SearchBar title="search..." width="50%" />
       <Dropdowns />
       <div className={classes.clear_all_text}>Clear all</div>
-      <TableContainer />
+      <div
+        style={{
+          paddingLeft: 50,
+          paddingRight: 50,
+          paddingBottom: 60
+        }}
+      >
+        <TableContainer />
+      </div>
     </div>
   );
 };

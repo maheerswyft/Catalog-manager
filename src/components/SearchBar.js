@@ -7,11 +7,10 @@ import InputAdornment from "@mui/material/InputAdornment";
 const useStyles = makeStyles({
   search_box: {
     background: "#FFFFFF",
-    /* #D4D4D4 - Light Grey */
 
     border: "1px solid #D4D4D4",
     boxSizing: "border-box",
-    borderRadius: "6px"
+    borderRadius: 20
   },
 });
 const SearchBar = ({title,width, height}) => {
